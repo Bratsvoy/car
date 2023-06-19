@@ -1,0 +1,55 @@
+.car {
+  position: relative;
+}
+
+.turn-signal {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.turn-signal.active {
+  animation: blink 1s infinite;
+  opacity: 1;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.turn-signal.left {
+  top: 24px;
+  left: 15px;
+}
+
+.turn-signal.right {
+  top: 24px;
+  right: 1279px; 
+}
+
+.turn-signal.left1 {
+  top: 405px;
+  left: 10px;
+}
+
+.turn-signal.right2 {
+  top: 405px;
+  right: 1279px; 
+}
+
+.car-image {
+  width: 200px;
+  height: auto;
+}
